@@ -107,7 +107,7 @@ const editNoteByIdHandler = (request, h) => {
 };
 
 const deleteNoteByIdHandler = (request, h) => {
-  const {id} = request.id;
+  const {id} = request.params;
 
   const index = notes.findIndex((note) => note.id === id);
 
